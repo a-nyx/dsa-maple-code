@@ -8,9 +8,9 @@ const search = (nums, target, left, right) => {
   if (nums[mid] === target) return mid;
 
   if (nums[mid] > target) {
-    return search(nums, target, left, right - 1);
+    return search(nums, target, left, mid - 1);
   } else {
-    return search(nums, target, left + 1, right);
+    return search(nums, target, mid + 1, right);
   }
 };
 
