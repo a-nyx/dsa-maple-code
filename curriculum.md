@@ -5,3 +5,8 @@
 | #3      | Strings                     | L 266, 161, 415      |
 | #4      | Stacks & Queues             | L 155, 20            |
 | #5      | Preparation Map             | L 273, 443           |
+| #6      | Recursion                   | L 344, 78            |
+| #7      | Binary Search               | L 704, 34            |
+| #8      | Linked Lists                | L 21, 83             |
+| #9      | Trees                       |                      |
+| #10     | Graphs                      |                      |
