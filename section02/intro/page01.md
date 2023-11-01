@@ -1,11 +1,26 @@
-# About the event
+# How to evaluate codes
 
-- Organized with [TorontoJS](https://torontojs.com/)
-- Organized by [Adam Nyx](https://www.linkedin.com/in/a-nyx/)
-- Shared on [Meetup](https://www.meetup.com/torontojs/) and [Guild](https://guild.host/torontojs/events)
-  <br/>
-- Prep for DSA Technical Interviews
-- Designed for junior developers & recent gradutes
-- Mainly coding in JavaScript
-- Question-based, Easy questions on LeetCode
-- Interview Tips
+- Clean Code
+  - Readability
+  - Namings
+  - Indentations
+  - Separation of Concerns (SoC): writing small functions
+- Question-based
+  - Covering all/edge cases
+  - Formatting data
+  - Verifying inputs
+  - Consistent output format
+
+## Complexities
+
+Rough estimation about the time and memory usages as a function of input sizes
+
+Input => Complexity
+n => O(n^2)
+m,n => O(mn)
+
+- Time Complexity: How much time it takes
+- Memory/Space Complexity: How much memory it uses
+
+Our goal is to minimize time complexity most of the time.
+When asked "what is the complexity?", they mean the time complexity.

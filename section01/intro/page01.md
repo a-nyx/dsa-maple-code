@@ -1,21 +1,45 @@
-### _Prologue_
+# Data Structures & Algorithms
+
+### Data Structures
+
+- [Primitive Types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): string, number, boolean, undefined,...
+- Arrays
+- Stacks & Queues
+- Linked Lists
+- Trees & Graphs
+- Hash Sets & Hash Maps
+- ...
 
 <br/>
 
-# About the event
+### Algorithms
 
-- Organized with [TorontoJS](https://torontojs.com/)
-- Organized by [Adam Nyx](https://www.linkedin.com/in/a-nyx/)
-- Shared on [Meetup](https://www.meetup.com/torontojs/) and [Guild](https://guild.host/torontojs/events)
-  <br/>
-- Prep for Technical Interviews
-- Designed for junior developers & recent gradutes
-  (Little or no experience with DSA & technical interview)
-- Mostly online
-- Interactive
-- Not recorded
-- Every two weeks
-- 90-120 minutes
-  <br/>
-- Mainly coding in JavaScript
-- Tools: Zoom, VS Code, LeetCode, GitHub(?), Slack(?)
+- Recursion
+- Dynamic Programming
+- Searching Algorithms
+- Sorting algorithms
+- ...
+
+<br/>
+
+### Complexities
+
+- Time Complexity
+- Memory Complexity
+
+<br/>
+
+## :star2: Interview Tip: Think out loud
+
+- Explain your solution
+- Tell why and why not
+- Compare options: Brute force, ...
+- Name things accordingly
+
+Example:
+
+> The stack is a data structure works with Last-In-First-Out (LIFO) principle. (Not built-in in JS.)
+
+```
+var stack = [];
+```

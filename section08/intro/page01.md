@@ -1,13 +1,24 @@
-# Intro #04
+# Linked Lists
 
-- Organized with [Maple Code on Meetup](https://www.meetup.com/maple-code/events/)
-- Organized by [Adam Nyx](https://www.linkedin.com/in/a-nyx/)
-  <br/>
-- Prep for DSA Technical Interviews
-- Designed for junior developers & recent gradutes
-- Mainly coding in JavaScript
-- Question-based, Easy questions on LeetCode
-- Interview Tips
-  <br/>
-- Notes and solutions shared on GitHub: [a-nyx/dsa-maple-code](https://github.com/a-nyx/dsa-maple-code)
-- [Feedback form](https://forms.gle/mXpfETYw84QdU87B8)
+See images on [Leetcode: Linked Lists](https://leetcode.com/explore/learn/card/linked-list/)
+
+- Similar to Arrays
+- Linear data structure
+- Nodes linked to each other by reference
+- Two types: singly-linked and doubly-linked
+
+- Common operations: traversal, insertion, deletion
+- Arrays vs Linked Lists ([read more](https://www.geeksforgeeks.org/linked-list-vs-array/))
+
+  - No access by index. It takes O(n) to visit/read a specific element.
+  - Insertion/Deletion: Updating the references. No shifting. O(1)
+
+- Common techniques & problems
+  - Two-pointers
+  - Reversing the list
+  - Finding intersections
+  - Merging lists
+
+Recommended: [Leetcode 707. Design Linked List](https://leetcode.com/problems/design-linked-list/)
+
+Google Interview Question: [Leetcode 138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)

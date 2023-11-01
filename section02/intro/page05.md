@@ -1,47 +1,35 @@
-# Major Types
+# Memory/Space Complexity
 
-O(1) = constant
-O(logn) = logarithmic
-O(n) = linear
-O(nlogn) = linearithmic
-O(n^2) = quadratic
-O(n^3) = cubic
-O(2^n) = exponential
-O(n!) = factorial
+- How much additional space does the algoritm use?
+- Other than the given data, what other structures do you use and what are their sizes compared to the input size?
+- Given input & expected output data ignored
+- We are supposed to not change the input data
+- Objects, sets, maps, arrays, ...
+  <br/>
+- Most of the time: O(1) or O(n) :snake:
+- Brute Force solutions => O(1)
+- Cool and accepted solutions => O(n)
 
-`O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(n^3) < O(2^n) < O(n!)`
-
-![Major complexity types](./img/chart-complexities.png)
-_https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/_
-
-## Tips
-
-- O(logn) => see [animation](https://yongdanielliang.github.io/animation/web/BinarySearchNew.html), see `./img/bst.webp`
-- O(nlogn) => Best sorting algorithm
-- Sometimes, it is a combination of major types
-
-### Nested loops
-
-O(n^2)
+### O(n) example
 
 ```js
-for (let i = 0; i < arr.length; i++) {
-  for (let k = 0; k < array.length; k++) {
-    console.log("haha");
-  }
-}
+const containsDuplicate = (nums) => {
+  const set = new Set(nums);
+  return set.size !== nums.length;
+};
 ```
 
-O((n^2 + n) / 2) => O(n^2)
+### O(1) example
 
 ```js
-for (let i = 0; i < arr.length; i++) {
-  for (let k = i + 1; k < array.length; k++) {
-    console.log("yo!");
+const containsDuplicate = (nums) => {
+  for (let left = 0; left < nums.length; left++) {
+    for (let right = left + 1; right < nums.length; right++) {
+      if (nums[left] === nums[right]) {
+        return true;
+      }
+    }
   }
-}
+  return false;
+};
 ```
-
-### Question
-
-Can nested loop have linear time complexity?

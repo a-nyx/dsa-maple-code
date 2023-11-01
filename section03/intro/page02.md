@@ -1,49 +1,132 @@
-# Strings
+# Primitives vs Objects
 
-definition:
-"a string is an array of characters" in some other languages // that's why they are together "arrays and string"
-VS
-"A JavaScript string is zero or more characters written inside quotes" (no char type)
+There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, null
 
-```js
-let string1 = "abc";
-let string2 = "abc";
-let string3 = `abc`; // See "template literals" and "tagged templates"
+Primitives:
 
-let string4 = 'ab"cd"e';
-let string5 = 'ab"c"de';
-let string6 = "ab\\c\\de";
-let string7 = "abc\nde";
+- Immutable
+- Basic units
+- Passed and copied by value // See. pass-by-value
 
-let stringLength1 = string1.length; // length is a prop
-```
+Objects:
 
-## Primitive values vs Objects
+- Mutable
+- Complicated structures
+- Passed and copied by reference // See. pass-by-reference
 
-JavaScript strings are normally primitive values. We can define strings as objects like
+Example 1
 
 ```js
-let string8 = new String("xyz"); // not recommended. complicated & slow.
+let a = 21;
+let b = a;
+
+console.log({ a, b });
+console.log("a===b", a === b);
+
+a = 25;
+
+console.log({ a, b });
+console.log("a===b", a === b);
 ```
 
-## Comparisons
-
-Comparing objects always returns false.
+Example 2
 
 ```js
-let a = new String("Maple Code");
-let b = new String("Maple Code");
-let c = "Maple Code";
+let a = [3, 5, 7, 9];
+let b = a;
 
-console.log("==", a == b); // false
-console.log("===", a === b); // false
+console.log({ a, b });
+console.log("a===b", a === b);
 
-console.log("==", a == c); // true
-console.log("===", a === c); // false
+a[2] = 25;
+
+console.log({ a, b });
+console.log("a===b", a === b);
+
+a = [1, 2, 3];
+
+console.log({ a, b });
+console.log("a===b", a === b);
 ```
 
-Recommended way to compare
+Example 3
 
 ```js
-console.log(string1.localeCompare(string2));
+let a = 21;
+
+const myFunc = (x) => {
+  x += 4;
+  console.log("In the function", x);
+};
+
+myFunc(a);
+
+console.log("Outside the function", a);
 ```
+
+Example 4
+
+```js
+let a = [1, 2, 3];
+
+const myFunc = (x) => {
+  x[1] = 4;
+  console.log("In the function", x);
+};
+
+myFunc(a);
+
+console.log("Outside the function", a);
+```
+
+Example 5
+
+```js
+let a = [1, 2, 3];
+
+const myFunc = (x) => {
+  x = [1, 2, 3];
+  console.log("In the function", x);
+};
+
+myFunc(a);
+
+console.log("Outside the function", a);
+```
+
+# immutable or not?
+
+JavaScript strings are immutable. Cannot be modified.
+Normally, primitive values don't have properties or methods. JS treats the strings as objects. (ツ)
+String methods do not change the original variables. They all return a new value.
+
+<img src="./img/immutable.png" width="300">
+
+- Working with arrays instead of strings, char[]
+- See StringBuilder classes
+
+## What is the time complexity?
+
+```js
+let str = "";
+
+for (let i = 0; i < 10; i++) {
+  str += String.fromCharCode(97 + i);
+}
+
+console.log(str);
+```
+
+It's O(n^2) :(
+
+```js
+let arr = [];
+
+for (let i = 0; i < 10; i++) {
+  arr.push(String.fromCharCode(97 + i));
+}
+
+console.log(arr.join(""));
+```
+
+It's O(n)

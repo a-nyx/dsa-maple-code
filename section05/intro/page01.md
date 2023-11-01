@@ -1,13 +1,13 @@
-# Intro #04
+# Interview Preparation Schedule
 
-- Organized with [Maple Code on Meetup](https://www.meetup.com/maple-code/events/)
-- Organized by [Adam Nyx](https://www.linkedin.com/in/a-nyx/)
-  <br/>
-- Prep for DSA Technical Interviews
-- Designed for junior developers & recent gradutes
-- Mainly coding in JavaScript
-- Question-based, Easy questions on LeetCode
-- Interview Tips
-  <br/>
-- Notes and solutions shared on GitHub: [a-nyx/dsa-maple-code](https://github.com/a-nyx/dsa-maple-code)
-- [Feedback form](https://forms.gle/mXpfETYw84QdU87B8)
+See: "Preparation Map", Cracking the Coding Interview 6th edition, page 30-31
+
+## Study plan
+
+- Learn basics
+  - Data Structures: Why to use, How to implement, How to utilize
+  - Time & Space Complexities
+  - Algorithms: Logic & classical examples
+- Solve selected questions, topic by topic, easy to hard
+- Compare different solutions
+- Mock interviews

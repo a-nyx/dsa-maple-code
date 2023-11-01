@@ -1,26 +1,20 @@
-# How to evaluate codes
+# Asymptotic Bounds & Notations
 
-- Clean Code
-  - Readability
-  - Namings
-  - Indentations
-  - Separation of Concerns (SoC): writing small functions
-- Question-based
-  - Covering all/edge cases
-  - Formatting data
-  - Verifying inputs
-  - Consistent output format
+- Mainly three types:
+  - O(n) - Big O: worst case, (lowest) upper bound
+  - Ω(n) - Big Omega: best case, (highest) lower bound
+  - Θ(n) - Big Theta: average case, tight bound
+- And more:
+  - o(n) - Small O: Big-O is to little-o as =< is to <
+  - ...
 
-## Complexities
+## Big O: O(n)
 
-Rough estimation about the time and memory usages as a function of input sizes
+- Think for huge input sizes
+- Find the lowest: O(n) <= O(n^2)
+- Simplify all
+  - Drop the constants and the coefficients
+  - Ignore the lower order terms
+- f(n) = 3n^2 + 10n + 255 => O(n^2)
 
-Input => Complexity
-n => O(n^2)
-m,n => O(mn)
-
-- Time Complexity: How much time it takes
-- Memory/Space Complexity: How much memory it uses
-
-Our goal is to minimize time complexity most of the time.
-When asked "what is the complexity?", they mean the time complexity.
+Tip: Look for the most repetitive line for time complexity

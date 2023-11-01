@@ -1,3 +1,0 @@
-# Topic
-
-This is template

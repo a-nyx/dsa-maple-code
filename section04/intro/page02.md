@@ -1,34 +1,43 @@
-# Stack: Last-in-First-out (LIFO)
+# Queue: First-in-First-out (FIFO)
 
-Stack is a data structure works with Last-In-First-Out (LIFO) principle.
-The most-recently-added element will be removed first.
+Queue is a data structure works with First-in-First-out (FIFO) principle.
+The first added element will be removed first.
 
-<img src="./../img/stack-1.png" width="400">
-<img src="./../img/stack-2.png" width="250">
+<img src="./../img/queue.png" width="500">
 
 ## Typical Operations / Methods
 
-1. **push(x)**: Adding onto the top
-2. **pop()**: Removing from the top
-3. peek()?: Read the element at the top
+1. **enqueue(x)**: Adding to the rear
+2. **dequeue()**: Removing from the front. a.k.a. poll(), remove()
+3. peek()?: Read/retrieve the head element
 4. isEmpty()?: Checking if the stack is empty
 5. size()?: Returning the number of items inside
 6. ...
 
-is the size fixed?
-what to return when empty?
+## Built-in classes
 
-## Built-in classes vs Using Arrays as stacks
+[Java Queue](https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html)
+[C++ Queue](https://www.programiz.com/cpp-programming/queue)
 
-[Java Stack](https://www.javatpoint.com/java-stack)
-[Stack in C++](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
+## Arrays as Queues ?
 
-If no built-in class, we can implement a Stack class or use an array as a stack
+Q: Is it a good idea to use arrays as queues? Why would it be inefficient?
 
-```js
-var stack = [];
-```
+[Circular Queue on LeetCode](https://leetcode.com/explore/learn/card/queue-stack/228/first-in-first-out-data-structure/1396/)
+[Introduction to Circular Queue on GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-circular-queue/)
+
+[LeetCode 622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/description/)
 
 ## A common usage
 
-See. Depth-First Search (DFS)
+See. Breadth-first Search (BFS)
+
+## Deque (double-ended queue)
+
+Deque is a data structure which supports the addition or removal from either end.
+It can be used as Stack or Queue
+
+## Playing around
+
+[LeetCode 232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
+[LeetCode 225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)

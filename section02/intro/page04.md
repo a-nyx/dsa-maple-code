@@ -1,111 +1,47 @@
-# Examples
+# Major Types
 
-## O(n) - linear time
+O(1) = constant
+O(logn) = logarithmic
+O(n) = linear
+O(nlogn) = linearithmic
+O(n^2) = quadratic
+O(n^3) = cubic
+O(2^n) = exponential
+O(n!) = factorial
 
-```js
-const indexOf = (arr, target) => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
-      return i;
-    }
-  }
-  return -1;
-};
+`O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(n^3) < O(2^n) < O(n!)`
 
-const targetIndex = indexOf([3, 19, 5, 1, 9, 11, 13, 21, 2], 9);
-console.log(targetIndex);
-```
+![Major complexity types](./img/chart-complexities.png)
+_https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/_
 
-## O(n) - linear time #2
+## Tips
 
-```js
-const increaseAndMultiply = (arr, plus, times) => {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] += plus;
-    arr[i] *= times;
-  }
-};
+- O(logn) => see [animation](https://yongdanielliang.github.io/animation/web/BinarySearchNew.html), see `./img/bst.webp`
+- O(nlogn) => Best sorting algorithm
+- Sometimes, it is a combination of major types
 
-const oneCoolArray = [3, 19, 5, 1, 9, 11, 13, 21, 2];
-increaseAndMultiply(oneCoolArray, 5, 10);
-console.log(oneCoolArray);
-```
+### Nested loops
 
-## O(n) - linear time #3
+O(n^2)
 
 ```js
-const increaseAll = (arr, plus) => {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] += plus;
+for (let i = 0; i < arr.length; i++) {
+  for (let k = 0; k < array.length; k++) {
+    console.log("haha");
   }
-};
-
-const multiplyAll = (arr, times) => {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] *= times;
-  }
-};
-
-const increaseAndMultiply = (arr, plus, times) => {
-  increaseAll(arr, plus);
-  multiplyAll(arr, times);
-};
-
-const oneCoolArray = [3, 19, 5, 1, 9, 11, 13, 21, 2];
-increaseAndMultiply(oneCoolArray, 5, 10);
-console.log(oneCoolArray);
+}
 ```
 
-if one of them was O(n^2), we'd ignore O(n)
-
-## O(1) - constant time
+O((n^2 + n) / 2) => O(n^2)
 
 ```js
-const getMidElement = (arr) => {
-  let midIndex = Math.round((arr.length - 1) / 2);
-  return arr[midIndex];
-};
-
-const oneCoolArray = [3, 19, 5, 1, 9, 11, 13, 21, 2];
-const midElement = getMidElement(oneCoolArray);
-console.log(midElement);
-```
-
-## O(n^2) - quadratic time
-
-```js
-const containsDuplicate = (nums) => {
-  for (let i = 0; i < nums.length; i++) {
-    for (let k = i + 1; k < nums.length; k++) {
-      if (nums[i] === nums[k]) {
-        return true;
-      }
-    }
+for (let i = 0; i < arr.length; i++) {
+  for (let k = i + 1; k < array.length; k++) {
+    console.log("yo!");
   }
-
-  return false;
-};
-
-const oneCoolArray = [3, 19, 5, 1, 9, 11, 13, 21, 2, 11];
-const hasDuplicate = containsDuplicate(oneCoolArray);
-console.log(hasDuplicate);
+}
 ```
 
-## O(n^3) - cubic time
+### Question
 
-```js
-const printTriplets = (nums, sum) => {
-  for (let i = 0; i < nums.length; i++) {
-    for (let k = i + 1; k < nums.length; k++) {
-      for (let t = k + 1; t < nums.length; t++) {
-        if (nums[i] + nums[k] + nums[t] == sum) {
-          console.log(`${nums[i]} + ${nums[k]} + ${nums[t]} = ${sum}`);
-        }
-      }
-    }
-  }
-};
-
-const oneCoolArray = [10, 5, 20, 30, 15, 5, 25, 35, 10];
-printTriplets(oneCoolArray, 40);
-```
+Can nested loop have linear time complexity?
