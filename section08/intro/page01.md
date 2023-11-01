@@ -10,8 +10,8 @@ See images on [Leetcode: Linked Lists](https://leetcode.com/explore/learn/card/l
 - Common operations: traversal, insertion, deletion
 - Arrays vs Linked Lists ([read more](https://www.geeksforgeeks.org/linked-list-vs-array/))
 
-  - No access by index. It takes O(n) to visit/read a specific element.
-  - Insertion/Deletion: Updating the references. No shifting. O(1)
+- No access by index. It takes O(n) to visit/read a specific element.
+- Insertion/Deletion: Updating the references. No shifting. O(1)
 
 - Common techniques & problems
   - Two-pointers
