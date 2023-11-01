@@ -8,5 +8,5 @@
 | #6      | Recursion                   | L 344, 78            |
 | #7      | Binary Search               | L 704, 34            |
 | #8      | Linked Lists                | L 21, 83             |
-| #9      | Trees                       |                      |
+| #9      | Trees                       | L 104, 101, 102      |
 | #10     | Graphs                      |                      |
