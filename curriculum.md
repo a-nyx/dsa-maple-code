@@ -9,4 +9,7 @@
 | #7      | Binary Search               | L 704, 34            |
 | #8      | Linked Lists                | L 21, 83             |
 | #9      | Trees                       | L 104, 101, 102      |
-| #10     | Graphs                      |                      |
+| #10     | Graphs                      | L 1971, 547          |
+| #11     |                             |                      |
+| #12     |                             |                      |
+| #13     |                             |                      |
