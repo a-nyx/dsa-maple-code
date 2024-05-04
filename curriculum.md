@@ -11,5 +11,5 @@
 | #9      | Trees                       | L 104, 101, 102      |
 | #10     | Graphs                      | L 1971, 547          |
 | #11     | Dynamic Programming         | L 121, 122, 123, 188 |
-| #12     |                             |                      |
+| #12     | Dynamic Programming         | L 392, 300           |
 | #13     |                             |                      |
