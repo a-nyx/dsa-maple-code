@@ -10,7 +10,7 @@ const place = (arr, el) => {
   arr[lo] = el;
 };
 
-const lengthOfLIS = nums => {
+const lengthOfLIS = (nums) => {
   if (!nums.length) return 0;
 
   const helper_array = [nums[0]];

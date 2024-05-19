@@ -1,4 +1,4 @@
-const lengthOfLIS = nums => {
+const lengthOfLIS = (nums) => {
   if (!nums.length) return 0;
 
   let longest = 1;

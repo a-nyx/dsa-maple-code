@@ -9,6 +9,6 @@
 - Question-based, Easy questions on LeetCode
 - Interview Tips
   <br/>
-- Every two weeks, 90-120 minutes, Not recorded
+- Not recorded
 - GitHub repo: [a-nyx/dsa-maple-code](https://github.com/a-nyx/dsa-maple-code)
 - [Feedback form](https://forms.gle/EN2Xa2Hc9ek8kBpq5)

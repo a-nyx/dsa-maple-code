@@ -1,6 +1,7 @@
 {
-  "name": "tjs-dsa",
+  "name": "dsa-maple-code",
   "version": "0.0.1",
+  "author": "Rick Sanchez broh",
   "scripts": {
     "prettify": "prettier --write \"./**/*.{js,jsx,ts,tsx,json,md}\""
   },
